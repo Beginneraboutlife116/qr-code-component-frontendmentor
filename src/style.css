@@ -1,0 +1,82 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html:focus-within {
+  scroll-behavior: smooth;
+}
+html, body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeSpeed;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+/* Using below when you use framework */
+/* #root, #__next {
+  isolation: isolate;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;700&display=swap');
+
+:root {
+  --card-bg-color: hsl(0, 0%, 100%);
+  --bg-color: hsl(212, 45%, 89%);
+  --p-color: hsl(220, 15%, 55%);
+  --title-color: hsl(218, 44%, 22%);
+  --fz: 15px;
+  --fw-400: 400;
+}
+html {
+  font-family: 'Outfit', sans-serif;
+}
+body {
+  background-color: var(--bg-color);
+}
+main {
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+.card {
+  width: min(85%, 20rem);
+  padding: min(5%, 1rem) min(5%, 1rem) min(10%, 2rem);
+  background-color: var(--card-bg-color);
+  border-radius: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5vh;
+  box-shadow: 0px 5px 20px 0px hsla(218, 44%, 22%, 0.15);
+}
+.card__qr-code {
+  border-radius: 0.6rem;
+}
+.card__title {
+  font-size: min(6vw, 1.25rem);
+  color: var(--title-color);
+}
+.card__text {
+  font-size: min(4vw, var(--fz));
+  font-weight: var(--fw-400);
+  color: var(--p-color);
+}
+.card__title, .card__text {
+  padding-inline: 1em;
+  text-align: center;
+}
