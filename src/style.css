@@ -66,6 +66,7 @@ main {
 }
 .card__qr-code {
   border-radius: 0.6rem;
+  cursor: url(../images/favicon-32x32.png) 16 16, auto;
 }
 .card__title {
   font-size: min(6vw, 1.25rem);
