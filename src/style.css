@@ -38,7 +38,7 @@ p, h1, h2, h3, h4, h5, h6 {
 :root {
   --card-bg-color: hsl(0, 0%, 100%);
   --bg-color: hsl(212, 45%, 89%);
-  --p-color: hsl(220, 15%, 55%);
+  --p-color: hsl(220, 15%, 35%);
   --title-color: hsl(218, 44%, 22%);
   --fz: 15px;
   --fw-400: 400;
